@@ -47,7 +47,7 @@ const DangerCarousel = ({ onSelectFugitive }) => {
     }, [currentIndex, fugitives]);
 
     const handleImageError = (e) => {
-        e.target.src = '/logo.png';
+        e.target.src = `${import.meta.env.BASE_URL}logo.png`;
         e.target.style.padding = '4rem';
         e.target.style.background = '#000';
     };

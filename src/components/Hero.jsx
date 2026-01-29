@@ -6,7 +6,7 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={styles.content}>
                 <div className={styles.branding}>
-                    <img src="/logo.png" alt="FBI Logo" className={styles.logo} />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="FBI Logo" className={styles.logo} />
                 </div>
                 <h1 className={styles.title}>WANTED</h1>
                 <h2 className={styles.subtitle}>THE ARCHIVES</h2>

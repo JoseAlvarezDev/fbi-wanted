@@ -6,12 +6,12 @@ const FugitiveCard = ({ fugitive, onClick }) => {
     // Default image if none provided
     // Improved image selection logic
     const handleImageError = (e) => {
-        e.target.src = '/logo.png';
+        e.target.src = `${import.meta.env.BASE_URL}logo.png`;
         e.target.style.padding = '2rem';
         e.target.style.background = 'rgba(0,0,0,0.5)';
     };
 
-    const image = fugitive.images && fugitive.images[0] ? fugitive.images[0].thumb : '/logo.png';
+    const image = fugitive.images && fugitive.images[0] ? fugitive.images[0].thumb : `${import.meta.env.BASE_URL}logo.png`;
 
     const extractAmount = (text) => {
         if (!text) return null;

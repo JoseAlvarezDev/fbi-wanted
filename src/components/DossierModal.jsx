@@ -13,12 +13,12 @@ const DossierModal = ({ fugitive, onClose }) => {
     if (!fugitive) return null;
 
     const handleImageError = (e) => {
-        e.target.src = '/logo.png';
+        e.target.src = `${import.meta.env.BASE_URL}logo.png`;
         e.target.style.padding = '4rem';
         e.target.style.background = '#e8e4db';
     };
 
-    const image = fugitive.images && fugitive.images[0] ? fugitive.images[0].original : '/logo.png';
+    const image = fugitive.images && fugitive.images[0] ? fugitive.images[0].original : `${import.meta.env.BASE_URL}logo.png`;
 
     return (
         <div className={styles.overlay} onClick={onClose}>

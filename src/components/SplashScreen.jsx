@@ -17,7 +17,7 @@ const SplashScreen = ({ onFinish }) => {
         <div className={`${styles.splash} ${isFading ? styles.fadeOut : ''}`}>
             <div className={styles.content}>
                 <div className={styles.logoWrapper}>
-                    <img src="/logo.png" alt="FBI Logo" className={styles.logo} />
+                    <img src={`${import.meta.env.BASE_URL}logo.png`} alt="FBI Logo" className={styles.logo} />
                     <div className={styles.scanner}></div>
                 </div>
                 <div className={styles.loadingContainer}>
