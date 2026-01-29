@@ -56,4 +56,4 @@ A little support goes a long way! If you’d like to help me keep creating, you 
 👉 [**Support me on Ko-fi**](https://ko-fi.com/josealvarezdev)
 
 ---
-Developed with ❤️ by [Jose Alvarez](https://github.com/josealvarezdev)
+Developed by [Jose Alvarez](https://github.com/josealvarezdev)
