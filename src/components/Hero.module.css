@@ -1,0 +1,142 @@
+.hero {
+    min-height: 60vh;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: var(--color-text-primary);
+}
+
+.content {
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.branding {
+    margin-bottom: 2rem;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.title {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    margin-bottom: 0;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.subtitle {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: var(--color-accent-gold);
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+}
+
+.scrollIndicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.65rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.5;
+}
+
+.mouse {
+    width: 26px;
+    height: 42px;
+    border: 2px solid var(--color-text-primary);
+    border-radius: 15px;
+    position: relative;
+    opacity: 0.5;
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: var(--color-accent-gold);
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: scroll 2s infinite ease-out;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        top: 6px;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 25px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+        padding-top: 2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 80px;
+    }
+}

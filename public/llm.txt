@@ -1,0 +1,28 @@
+# FBI WANTED: THE ARCHIVES
+
+> [!NOTE]
+> This is a professional digital archive interface for the FBI's Most Wanted fugitives. It is built as a cinematic React application utilizing official government data.
+
+## Project Summary
+A high-end, cinematic web application that fetches and displays real-time data from the FBI Wanted API. The interface features a dark-themed, "intelligence agency" aesthetic with gold and red accents.
+
+## Core Features
+- **Ten Most Wanted Carousel:** A high-priority auto-rotating showcase of the top fugitives.
+- **Searchable Archives:** Full grid of wanted posters with filtering by Field Office and search by name.
+- **Detailed Dossiers:** High-fidelity criminal records with "old paper" textures, classified stamps, and last-seen metadata.
+- **Intelligence Ticker:** Real-time scrolling news bar with "LIVE" status indicators.
+- **3D Background:** Subtle cinematic atmosphere powered by Three.js.
+
+## Technical Context
+- **Framework:** React with Vite.
+- **Styling:** Vanilla CSS Modules with a focus on high-end aesthetics (Gradients, micro-animations, glassmorphism).
+- **Data Source:** [FBI Wanted API](https://api.fbi.gov/wanted/v1/list).
+- **URL:** https://josealvarezdev.github.io/fbi-wanted/
+
+## Legal & Compliance
+- **Data Attribution:** All criminal data is sourced from the FBI Public Archives.
+- **Privacy:** No user data is collected or stored.
+- **Aviso:** The site is for informational/educational purposes only.
+
+---
+Created by [Jose Alvarez](https://ko-fi.com/josealvarezdev)
