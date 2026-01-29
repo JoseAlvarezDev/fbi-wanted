@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josealvarezdev.github.io/fbi-wanted/sitemap.xml
+
+# LLM Optimized metadata
+# Available at /fbi-wanted/llm.txt
